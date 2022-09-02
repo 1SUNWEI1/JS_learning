@@ -1,0 +1,61 @@
+<!--
+ * @Author: sunwei
+ * @Date: 2022-09-02 11:25:36
+ * @LastEditors: sunwei
+ * @LastEditTime: 2022-09-02 15:18:00
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>包装类</title>
+    <script type="text/javascript">
+        /* 
+         * 基本数据类型
+         * String Number Boolean Null Undefined 
+         * 引用数据类型
+         * Object 
+         * 在JS中我我们提供了三个包装类，通过这三个包装类可以将基本的数据类型的数据转换为对象
+         * String()可以将基本数据类型字符串转换为String对象
+         * Number()可以将基本数据类型的数字转换为Number对象
+         * Boolean() 可以将基本数据类型的布尔值转换为Boolean对象
+         * 
+         */
+        
+         //创建一个Number对象
+         var num = new Number(3);
+
+         //向num对象中添加一个属性
+         num.hello = "这是一个hello属性";
+         console.log(num.hello);//这是一个hello属性
+
+         console.log(typeof num);//Object
+
+        //  var b = new Boolean(true);
+        var b = new Boolean(false);
+        //向if中传一个对象时，系统会把Boolean对象转换为Boolean值，对象转为Boolean均为true
+        /*  if(b){
+            alert("It`s running!");
+
+         } */
+
+            /* 
+             * 方法和属性只能添加给对象，不能添加给基本数据类型
+             *      -当我们对一些基本数据类型的值去调用属性和方法时
+             *      -浏览器会临时使用包装类将其转换为对象，然后再调用对象的属性和方法；
+             *      -调用完以后再将其转换为基本数据类型
+             */
+         var s = 123;
+         //解析器临时将基本数据类型s临时包装成Number对象，然后调用Number对象的toString方法
+         s = s.toString();
+         
+         console.log(s);//"123"
+         console.log(typeof s);//"string"
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
