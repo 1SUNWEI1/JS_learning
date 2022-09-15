@@ -7,34 +7,34 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>事件</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- 我们可以在时间对应的属性中设置一些JS代码，当事件被触发时，这些代码会被执行 -->
     <!-- <button id="btn" onclick="alert(' 你别点！')">按钮</button> -->
     <button id="btn">按钮</button>
     <script type="text/javascript">
-        
-        /* 
-         * 事件就是用户和浏览器之间的交互行为，比如点击按钮、鼠标移动、关闭窗口； 
-         *
-         */
+      /*
+       * 事件就是用户和浏览器之间的交互行为，比如点击按钮、鼠标移动、关闭窗口；
+       *
+       */
 
-         var btn = document.getElementById("btn");
+      var btn = document.getElementById("btn");
 
-         /* 
-          * 可以为按钮的对应事件绑定处理函数的形式来响应事件；
-          *
-          */
+      /*
+       * 可以为按钮的对应事件绑定处理函数的形式来响应事件；
+       *
+       */
 
-          //绑定一个单击事件
-          btn.onclick = function(){
-            alert("你还点！！")
-          };
+      //绑定一个单击事件
+      //像这种为单击事件绑定的函数，我们称为单击响应函数
+      btn.onclick = function () {
+        alert("你还点！！");
+      };
     </script>
-</body>
-</html>  
+  </body>
+</html>

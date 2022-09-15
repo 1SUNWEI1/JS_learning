@@ -47,6 +47,7 @@ ul {
   padding: 2px;
 }
 
+/* 列表一行展示 */
 li {
   display: inline;
   background: rgb(176, 176, 176);
