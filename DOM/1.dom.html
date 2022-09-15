@@ -1,0 +1,39 @@
+<!--
+ * @Author: sunwei
+ * @Date: 2022-09-09 10:36:43
+ * @LastEditors: sunwei
+ * @LastEditTime: 2022-09-09 13:52:26
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    
+</head>
+<body>
+    <button id="btn">按钮</button>
+    <script type="text/javascript">
+        /* 
+         * 浏览器已经为我们提供了文档节点对象，这个对象是windows对象属性
+         * 可以在页面中直接使用，文档节点代表的是整个网页
+         * 
+         * 
+         */
+
+         console.log(document);
+
+         //获取到button对象
+         var btn = document.getElementById("btn");
+         console.log(btn); //<button id="btn">按钮</button>
+        
+         //修改按钮文字
+         console.log(btn.innerHTML);//按钮
+         btn.innerHTML = "button";
+
+    </script>
+</body>
+</html>
